@@ -47,6 +47,7 @@ namespace HighlighToolGUI
             FFMPEG2 ff = new FFMPEG2(filename, videoNameBox.Text);
             ff.CutVideo();
             ff.ConcatenateVideos();
+            ff.DeleteTempFiles();
             infoBlock.Text = "done";
         }
     }
