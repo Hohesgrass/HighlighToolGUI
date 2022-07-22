@@ -1,0 +1,2 @@
+# HighlighToolGUI
+Fausts Highlight Tool
