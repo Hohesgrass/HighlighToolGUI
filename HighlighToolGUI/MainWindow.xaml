@@ -1,0 +1,52 @@
+﻿<Window x:Class="HighlighToolGUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HighlighToolGUI"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="200" Width="600">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition>
+                
+            </ColumnDefinition>
+            <ColumnDefinition>
+
+            </ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10">
+
+            </RowDefinition>
+            <RowDefinition Height="30">
+
+            </RowDefinition>
+            <RowDefinition>
+
+            </RowDefinition>
+            <RowDefinition Height="30">
+
+            </RowDefinition>
+            <RowDefinition Height="10"></RowDefinition>
+
+
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Column="0" Grid.Row="1" Text="Enter a Name for your video:"></TextBlock>
+        <TextBox x:Name="videoNameBox" Grid.Row="1" Grid.Column="1"></TextBox>
+
+        <TextBlock x:Name="infoBlock" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2"></TextBlock>
+
+
+        <Button Click="Start_Click" x:Name="Start" Content="Start" Grid.Column="2" Grid.Row="2"></Button>
+        
+        
+        <Button Grid.Column="2" Grid.Row="3" Name="btnOpenFile" Click="btnOpenFile_Click" Content="Open File"></Button>
+        <TextBox x:Name="textBox" Grid.Row="3" Grid.ColumnSpan="2" Text="..."></TextBox>
+
+        
+    </Grid>
+</Window>
